@@ -59,11 +59,12 @@ Add to `~/.claude/settings.json` (or the project's `.claude/settings.json`):
 }
 ```
 
-You get a live fuel gauge at the bottom of every Claude Code session:
+You get a live fuel gauge at the bottom of every Claude Code session —
+in the terminal and in VS Code's integrated terminal alike (same UI):
 
-```
-⚖ 2.1k tokens · 1 over budget
-```
+![statusline preview](docs/demo-statusline.gif)
+
+*(simulated preview — recorded with the tape in `docs/statusline.tape`)*
 
 `--statusline` always exits 0 and never prints color codes — it will never
 break your status bar.

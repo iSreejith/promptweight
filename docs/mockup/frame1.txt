@@ -1,0 +1,18 @@
+[1m╭──────────────────────────────────────────────────────────────╮[0m
+[1m│[0m ✻ Welcome to [1mClaude Code[0m!                                       [1m│[0m
+[1m│[0m                                                              [1m│[0m
+[1m│[0m   /help for help, /status for your current setup             [1m│[0m
+[1m│[0m   cwd: ~/projects/my-app                                     [1m│[0m
+[1m╰──────────────────────────────────────────────────────────────╯[0m
+
+[2m>[0m tighten the retry logic in src/api/client.ts
+
+⏺ I'll add exponential backoff with a cap and jitter.
+
+  ⏺ [1mUpdate[0m(src/api/client.ts)
+    └ Updated with 14 additions and 3 removals
+
+⏺ Done. Retries now back off 250ms → 4s with jitter.
+
+[2m──────────────────────────────────────────────────────────────[0m
+ [32m⚖ 1.9k tokens · all ✓[0m                          [2mmy-app · opus[0m

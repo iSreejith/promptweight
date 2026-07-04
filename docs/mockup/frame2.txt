@@ -1,0 +1,11 @@
+[2m>[0m also remember: never use axios, always use fetch
+
+⏺ Noted — I'll record that convention in CLAUDE.md.
+
+  ⏺ [1mUpdate[0m(CLAUDE.md)
+    └ Added 1 line
+
+  [33m⚠ promptweight: CLAUDE.md just crossed its 1500-token budget[0m
+
+[2m──────────────────────────────────────────────────────────────[0m
+ [31m⚖ 2.1k tokens · 1 over budget[0m                  [2mmy-app · opus[0m
