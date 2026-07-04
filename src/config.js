@@ -41,7 +41,8 @@ export function loadConfig(path) {
   if (!existsSync(path)) return normalizeConfig({});
   let raw;
   try {
-    raw = JSON.parse(readFileSync(path, 'utf8'));
+    // strip UTF-8 BOM — Windows editors and PowerShell often write one
+    raw = JSON.parse(readFileSync(path, 'utf8').replace(/^﻿/, ''));
   } catch (e) {
     throw new Error(`cannot parse ${path}: ${e.message}`);
   }

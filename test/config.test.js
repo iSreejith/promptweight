@@ -28,6 +28,13 @@ test('loadConfig parses a real file', () => {
   ]);
 });
 
+test('loadConfig tolerates a UTF-8 BOM (Windows editors, PowerShell)', () => {
+  const dir = mkdtempSync(join(tmpdir(), 'pw-'));
+  const p = join(dir, '.promptweight.json');
+  writeFileSync(p, '﻿' + JSON.stringify({ requestsPerMonth: 5 }));
+  assert.equal(loadConfig(p).requestsPerMonth, 5);
+});
+
 test('malformed JSON and invalid shapes throw with the source name', () => {
   const dir = mkdtempSync(join(tmpdir(), 'pw-'));
   const p = join(dir, 'bad.json');
