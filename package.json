@@ -1,0 +1,16 @@
+{
+  "name": "promptweight",
+  "version": "0.1.0",
+  "description": "Weigh your Claude instruction files. Token budgets for CLAUDE.md and skills — in your terminal, your Claude Code statusline, and CI.",
+  "type": "module",
+  "bin": { "promptweight": "bin/promptweight.js" },
+  "engines": { "node": ">=18" },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "scripts": { "test": "node --test" },
+  "keywords": ["claude", "claude-code", "tokens", "budget", "context", "prompt", "ci", "devtools"],
+  "author": "Sreejith <iSreejith@gmail.com> (https://github.com/iSreejith)",
+  "repository": { "type": "git", "url": "git+https://github.com/iSreejith/promptweight.git" },
+  "bugs": { "url": "https://github.com/iSreejith/promptweight/issues" },
+  "homepage": "https://github.com/iSreejith/promptweight#readme",
+  "license": "MIT"
+}
